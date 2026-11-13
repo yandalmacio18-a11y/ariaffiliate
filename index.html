@@ -29,51 +29,9 @@
       </div>
       <p class="helper">Attach product pictures in ChatGPT, then paste this template.</p>
       <div id="chatgpt-template" class="text-panel compact" tabindex="0">
-        Review the attached product pictures for an affiliate video. Use only confirmed details; do not guess. Return the product name, confirmed product details, exact product appearance, Faceless or My Avatar recommendation, setting and consistency, a 3–5 scene plan with all essential action and narration ending by 0:14, exact narration, unsupported features or claims that must not be invented or shown, and a TikTok violation check. In the plan, place this instruction exactly once near the beginning: “Use @me’s saved verified voice for every spoken line across the full 15 seconds. Do not substitute another voice or narrator.” Do not repeat the voice instruction elsewhere. If you recommend My Avatar, preserve her exact identity and appearance from the uploaded avatar reference, but change her clothing to an appropriate outfit for the product, setting, and scene; keep that outfit consistent throughout the video. Preserve the exact product, quantity, size, color, components, branding, and setting in every scene. Flag anything that cannot be confirmed. Do not include the 0:14–0:15 hold; the builder adds it.
+        Review the attached product pictures for an affiliate video. Use only confirmed details; do not guess. Return the product name, confirmed product details, exact product appearance, Faceless or My Avatar recommendation, setting and consistency, a 3–5 scene plan with all essential action and narration ending by 0:14, exact narration, unsupported features or claims that must not be invented or shown, and a TikTok violation check. Place this instruction exactly once near the beginning: “Use @me’s saved verified voice for every spoken line across the full 15 seconds. Do not substitute another voice or narrator.” Do not repeat the voice instruction elsewhere. If you recommend My Avatar, preserve her exact identity and appearance from the uploaded avatar reference, but change her clothing to an appropriate outfit for the product, setting, and scene; keep that outfit consistent throughout the video. Preserve the exact product, quantity, size, color, components, branding, and setting in every scene. Flag anything that cannot be confirmed. Complete all essential action and narration by 0:14, then use 0:14–0:15 for a silent, stable hero shot with no new dialogue or action. Do not generate captions, prices, discounts, ratings, random text, logos not present on the product, or watermarks. Generate Flow Prompt.
       </div>
       <button id="copy-template" class="button primary full" type="button">Copy ChatGPT request</button>
-    </section>
-
-    <section class="card" aria-labelledby="step-two-title">
-      <div class="section-heading">
-        <span class="step-number">2</span>
-        <h2 id="step-two-title">Paste the ChatGPT recommended plan</h2>
-      </div>
-      <label class="sr-only" for="plan-input">ChatGPT recommended plan</label>
-      <textarea id="plan-input" class="text-panel input-panel" rows="7" placeholder="Paste the complete ChatGPT response here…"></textarea>
-      <div class="actions split-actions">
-        <button id="clear-plan" class="button secondary" type="button">Clear</button>
-        <button id="build-prompt" class="button primary" type="button">Generate Flow prompt <span aria-hidden="true">→</span></button>
-      </div>
-      <p id="plan-error" class="error" role="alert" hidden>Paste the ChatGPT recommended plan first.</p>
-    </section>
-
-    <section class="card output-card" aria-labelledby="step-three-title">
-      <div class="output-heading">
-        <div class="section-heading">
-          <span class="step-number">3</span>
-          <h2 id="step-three-title">Generated Google Flow prompt</h2>
-        </div>
-        <div class="settings" aria-label="Locked Google Flow settings">
-          <span>15 sec</span>
-          <span>9:16</span>
-          <span>Max quality</span>
-        </div>
-      </div>
-      <div id="prompt-output" class="text-panel output-panel" tabindex="0" aria-live="polite">
-        <span class="placeholder">Your finished prompt will appear here.</span>
-      </div>
-      <div class="output-footer">
-        <div class="actions output-actions">
-          <button id="copy-prompt" class="button primary" type="button" disabled>Copy prompt</button>
-          <button id="clear-output" class="button secondary" type="button">Clear</button>
-        </div>
-        <div class="posting-checklist" aria-label="Before posting checklist">
-          <strong>Before posting</strong>
-          <span>✓ Turn on AI-generated content</span>
-          <span>✓ Turn on commercial-content disclosure</span>
-        </div>
-      </div>
     </section>
   </main>
 
