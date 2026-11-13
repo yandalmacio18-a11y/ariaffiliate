@@ -124,7 +124,10 @@ h2 {
 }
 
 .text-panel:focus { border-color: var(--gold); box-shadow: 0 0 0 3px rgba(224, 184, 79, .12); }
-.compact { padding: 20px 22px; }
+.compact {
+  padding: 20px 22px;
+  white-space: pre-wrap;
+}
 
 .input-panel {
   display: block;
