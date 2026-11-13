@@ -40,13 +40,13 @@ button, textarea { font: inherit; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 148px;
+  min-height: 190px;
   border-bottom: 1px solid var(--line);
 }
 
 .brand {
   color: var(--text);
-  font-size: clamp(3rem, 6.5vw, 5rem);
+  font-size: clamp(4rem, 9vw, 7.5rem);
   font-weight: 800;
   line-height: .96;
   letter-spacing: -.055em;
@@ -70,8 +70,8 @@ main { padding-block: 48px 80px; }
 
 .hero h1 {
   margin: 0;
-  max-width: 680px;
-  font-size: clamp(2.15rem, 5vw, 3.65rem);
+  max-width: 620px;
+  font-size: clamp(1.9rem, 3.8vw, 3rem);
   line-height: 1.06;
   letter-spacing: -.045em;
   font-weight: 800;
@@ -241,8 +241,8 @@ h2 {
 
 @media (max-width: 720px) {
   .shell { width: min(calc(100% - 24px), var(--max-width)); }
-  .topbar { min-height: 112px; }
-  .brand { font-size: clamp(2.65rem, 13vw, 4rem); }
+  .topbar { min-height: 132px; }
+  .brand { font-size: clamp(3.25rem, 16vw, 5rem); }
   .product-label { display: none; }
   main { padding-block: 34px 50px; }
   .hero { margin-bottom: 30px; }
