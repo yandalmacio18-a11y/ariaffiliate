@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07080a">
+  <meta name="description" content="Build copy-ready Google Flow affiliate prompts from a ChatGPT product plan.">
+  <title>Ari AI Studio — Affiliate Prompt Builder</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar shell">
+    <a class="brand" href="#top" aria-label="Ari AI Studio home">Ari AI Studio</a>
+    <span class="product-label">Personal Flow Builder</span>
+  </header>
+
+  <main id="top" class="shell">
+    <section class="hero" aria-labelledby="page-title">
+      <h1 id="page-title">Build a ready-to-copy<br><span>affiliate prompt.</span></h1>
+    </section>
+
+    <section class="card" aria-labelledby="step-one-title">
+      <div class="section-heading">
+        <span class="step-number">1</span>
+        <h2 id="step-one-title">Copy the ChatGPT product-plan request</h2>
+      </div>
+      <p class="helper">Attach product pictures in ChatGPT, then paste this template.</p>
+      <div id="chatgpt-template" class="text-panel compact" tabindex="0">
+        Review the attached product pictures for an affiliate video. Use only confirmed details; do not guess. Return the product name, confirmed product details, exact product appearance, Faceless or My Avatar recommendation, setting and consistency, a 3–5 scene plan with all essential action and narration ending by 0:14, exact narration using @me’s saved verified voice only, unsupported features or claims that must not be invented or shown, and a TikTok violation check. Preserve the exact product, quantity, size, color, components, branding, and setting in every scene. Flag anything that cannot be confirmed. Do not include the 0:14–0:15 hold; the builder adds it.
+      </div>
+      <button id="copy-template" class="button primary full" type="button">Copy ChatGPT request</button>
+    </section>
+
+    <section class="card" aria-labelledby="step-two-title">
+      <div class="section-heading">
+        <span class="step-number">2</span>
+        <h2 id="step-two-title">Paste the ChatGPT recommended plan</h2>
+      </div>
+      <label class="sr-only" for="plan-input">ChatGPT recommended plan</label>
+      <textarea id="plan-input" class="text-panel input-panel" rows="7" placeholder="Paste the complete ChatGPT response here…"></textarea>
+      <div class="actions split-actions">
+        <button id="clear-plan" class="button secondary" type="button">Clear</button>
+        <button id="build-prompt" class="button primary" type="button">Build copy-ready prompt <span aria-hidden="true">→</span></button>
+      </div>
+      <p id="plan-error" class="error" role="alert" hidden>Paste the ChatGPT recommended plan first.</p>
+    </section>
+
+    <section class="card output-card" aria-labelledby="step-three-title">
+      <div class="output-heading">
+        <div class="section-heading">
+          <span class="step-number">3</span>
+          <h2 id="step-three-title">Copy-ready Google Flow prompt</h2>
+        </div>
+        <div class="settings" aria-label="Locked Google Flow settings">
+          <span>15 sec</span>
+          <span>9:16</span>
+          <span>Max quality</span>
+        </div>
+      </div>
+      <div id="prompt-output" class="text-panel output-panel" tabindex="0" aria-live="polite">
+        <span class="placeholder">Your finished prompt will appear here.</span>
+      </div>
+      <div class="output-footer">
+        <div class="actions output-actions">
+          <button id="copy-prompt" class="button primary" type="button" disabled>Copy prompt</button>
+          <button id="clear-output" class="button secondary" type="button">Clear</button>
+        </div>
+        <div class="posting-checklist" aria-label="Before posting checklist">
+          <strong>Before posting</strong>
+          <span>✓ Turn on AI-generated content</span>
+          <span>✓ Turn on commercial-content disclosure</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
