@@ -38,6 +38,10 @@ async function copyText(text, successMessage) {
   showToast(successMessage);
 }
 
+document.querySelector('#copy-template').addEventListener('click', () => {
+  copyText(document.querySelector('#chatgpt-template').textContent.trim(), 'ChatGPT request copied');
+});
+
 function autoGrow() {
   planInput.style.height = 'auto';
   const nextHeight = Math.min(Math.max(planInput.scrollHeight, 180), 520);
@@ -49,10 +53,6 @@ function clearOutput() {
   output.innerHTML = '<span class="placeholder">Your finished prompt will appear here.</span>';
   copyPromptButton.disabled = true;
 }
-
-document.querySelector('#copy-template').addEventListener('click', () => {
-  copyText(document.querySelector('#chatgpt-template').textContent.trim(), 'ChatGPT request copied');
-});
 
 document.querySelector('#clear-plan').addEventListener('click', () => {
   planInput.value = '';
