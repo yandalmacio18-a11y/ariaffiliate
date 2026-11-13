@@ -40,15 +40,16 @@ button, textarea { font: inherit; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 96px;
+  min-height: 148px;
   border-bottom: 1px solid var(--line);
 }
 
 .brand {
   color: var(--text);
-  font-size: clamp(1.7rem, 4vw, 2.5rem);
+  font-size: clamp(3rem, 6.5vw, 5rem);
   font-weight: 800;
-  letter-spacing: -.04em;
+  line-height: .96;
+  letter-spacing: -.055em;
   text-decoration: none;
 }
 
@@ -69,10 +70,10 @@ main { padding-block: 48px 80px; }
 
 .hero h1 {
   margin: 0;
-  max-width: 780px;
-  font-size: clamp(2.7rem, 7vw, 5rem);
-  line-height: 1.04;
-  letter-spacing: -.055em;
+  max-width: 680px;
+  font-size: clamp(2.15rem, 5vw, 3.65rem);
+  line-height: 1.06;
+  letter-spacing: -.045em;
   font-weight: 800;
 }
 
@@ -240,7 +241,8 @@ h2 {
 
 @media (max-width: 720px) {
   .shell { width: min(calc(100% - 24px), var(--max-width)); }
-  .topbar { min-height: 78px; }
+  .topbar { min-height: 112px; }
+  .brand { font-size: clamp(2.65rem, 13vw, 4rem); }
   .product-label { display: none; }
   main { padding-block: 34px 50px; }
   .hero { margin-bottom: 30px; }
